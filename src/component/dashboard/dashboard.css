@@ -1,0 +1,33 @@
+form * {
+  display: flex;
+  width: 500px;
+  margin: auto;
+}
+
+
+form :first-child{
+  margin-top: 50px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+body {
+  width: 800px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: rgb(248, 244, 244);
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.submitButton {
+  width: 80px;
+}

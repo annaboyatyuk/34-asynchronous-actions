@@ -1,0 +1,54 @@
+{
+  "name": "34-asynchronous-actions",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) Async Actions ===",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "watch": "nodemon index.js",
+    "test": "jest --coverage --verbose --forceExit",
+    "test-watch": " jest --watchAll",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annaboyatyuk/34-asynchronous-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annaboyatyuk/34-asynchronous-actions/issues"
+  },
+  "homepage": "https://github.com/annaboyatyuk/34-asynchronous-actions#readme",
+  "dependencies": {
+    "babel-env": "^2.4.1",
+    "babel-eslint": "^8.2.4",
+    "babel-register": "^6.26.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.0.0",
+    "express": "^4.16.3",
+    "jest": "^23.1.0",
+    "mockgoose": "^7.3.5",
+    "mongoose": "^5.1.6",
+    "morgan": "^1.9.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "require-dir": "^1.0.0",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "react-test-renderer": "^16.4.2"
+  }
+}
