@@ -10,9 +10,9 @@
 
 
 ### Configuration  
-Welcome to the coffee app
-enter your favorite coffee, roast and origin
-keep track of all the coffee
-double click the roast or origin to edit the info
-click the x to delete
+- Welcome to the coffee app
+- enter your favorite coffee, roast and origin
+- keep track of all the coffee
+- double click the roast or origin to edit the info
+- click the x to delete
 
