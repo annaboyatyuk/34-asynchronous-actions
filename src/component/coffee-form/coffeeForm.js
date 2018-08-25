@@ -48,7 +48,7 @@ class CoffeeForm extends React.Component {
 
         <input required type="text" name='roast' onChange={this.handleChange} value={this.state.roast}/>
 
-        <label >COFFEE</label>
+        <label >COFFEE ORIGIN</label>
 
         <input required type="text" name='coffee' onChange={this.handleChange} value={this.state.coffee}/>
 

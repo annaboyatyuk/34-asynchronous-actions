@@ -31,3 +31,7 @@ li {
 .submitButton {
   width: 80px;
 }
+
+span {
+  color: rgb(151, 150, 150);
+}
