@@ -1,54 +1,54 @@
-import * as actions from '../../../action/categoryActions';
+import * as actions from '../../../action/coffeeActions';
 
-import reducerCategory from '../../../reducer/category';
+import reducerCoffee from '../../../reducer/coffee';
 
-describe('reducerCategory', () => {
+describe('reducerCoffee', () => {
 
   it('state should start as empty array', () => {
-    const newState = reducerCategory([], 'aaaaaaa');
+    const newState = reducerCoffee([], 'aaaaaaa');
     expect(newState).toEqual([]);
   });
 
-  it('should add category', () => {
-    let created = actions.categoryCreate({name: 'coffee'});
+  it('should add coffee', () => {
+    let created = actions.coffeeCreate({name: 'coffee'});
 
-    let newState = reducerCategory([], created);
+    let newState = reducerCoffee([], created);
 
     expect(newState.length).toBe(1);
 
   });
 
   it('should update a note', () => {
-    let created = actions.categoryCreate({
+    let created = actions.coffeeCreate({
       name: 'name',
     });
-    let newState = reducerCategory([], created);
+    let newState = reducerCoffee([], created);
 
     expect(newState.length).toBe(1);
 
-    let updated = actions.categoryUpdate({
+    let updated = actions.coffeeUpdate({
       id: newState[0].id,
       name: 'not name',
     });
-    let updatedState = reducerCategory(newState, updated);
+    let updatedState = reducerCoffee(newState, updated);
 
     expect(updatedState[0].name).toBe('not name');
   });
 
 
-  it('should delete a category', () => {
-    let created = actions.categoryCreate({
+  it('should delete a coffee', () => {
+    let created = actions.coffeeCreate({
       name: 'name',
     });
-    let newState = reducerCategory([], created);
+    let newState = reducerCoffee([], created);
 
     expect(newState.length).toBe(1);
 
-    let removed = actions.categoryDestroy({
+    let removed = actions.coffeeDestroy({
       id: newState[0].id,
     });
 
-    let removedState = reducerCategory(newState, removed);
+    let removedState = reducerCoffee(newState, removed);
 
     expect(removedState.length).toBe(0);
   });

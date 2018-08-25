@@ -40,7 +40,7 @@ class CoffeeItem extends React.Component {
 
                 <p onDoubleClick={() => this.handleDouble(coffeeItem._id)} >{coffeeItem.roast}</p>
 
-                <p onDoubleClick={() => this.handleDouble(coffeeItem._id)} >{coffeeItem.coffee}</p>
+                <p onDoubleClick={() => this.handleDouble(coffeeItem._id)} >{coffeeItem.coffee} <span>(double click to edit)</span></p>
 
                 <button onClick={() => this.props.destroy(coffeeItem)}>X</button>
 
